@@ -1,0 +1,3 @@
+If I was hired as a consultant of a company, then I would look into the development phase in a test driven way.
+
+I would like to start with a module and test it until it doesn't work as it is supposed to be. With this process, the Quality Assurance team checks all the bugs and the code will not be approved until the QA allows for it. This way, there will be very little bugs. I would have a task sprint for the development team week wise (i.e how much can a development team can finish certain team in a week). According to sprint, I would check all the tasks the developers progress.
