@@ -1,0 +1,27 @@
+function nthPrimeNumberChecker (num) { 
+    var i = 2;
+    var c = 0;
+    var arr = [];
+    while (c < num) {
+        i++;
+        if (checkPrime (i)) {
+            arr.push(i);
+            c++;
+        }
+    }
+    return arr[num-1];
+}
+
+function checkPrime (num) {
+    for (i=2; i < num; i++){
+        if (num % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+var input = 10001;
+var nthPrimeNumber = nthPrimeNumberChecker(input);
+
+document.write("The " + input + " prime number is " + nthPrimeNumber);

@@ -1,0 +1,39 @@
+var number1 = "", number2 = "";
+
+function question1 (input) {
+    if (input === 0) {
+        return number1;
+    } else if (input < 0) {
+        number1 = "-";
+        return question1(parseInt(-input));
+    }
+
+    var remainder = (input % 7);
+    input = input/7;
+    if (remainder === 0 && number1 === "" || remainder === 0 && number1 === "-") {
+        // Do nothing
+    } else {
+        number1 += remainder.toString();
+    }            
+    return question1(parseInt(input)); 
+} 
+
+function question2 (input) {
+    if (input < 0) {
+        number2 = "-";
+        return question2(parseInt(-input));
+    } else if (input < 7) {
+        return input.toString();
+    }
+
+    var remainder = (input % 7);
+    input = input/7;
+    number2 += input.toString() + remainder.toString();
+    return number2; 
+}
+
+var input1 = 100, input2 = -7;
+var answer1 = question1(input1); // Calling function question1
+var answer2 = question2(input2); // Calling function question2
+document.write("The base 7 representation of " + input1 + " is " + answer1);
+document.write("<br>The base 7 representation of " + input2 + " is " + answer2);

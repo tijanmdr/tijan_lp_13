@@ -1,0 +1,10 @@
+To test login page as given in the figure, the test scenarios I need to examine are as follows:
+
+a. To verify if the user can login with valid username and password.
+b. To verify if a validation message is displayed or not while submitting both fields or any one field blank.
+c. To verify if a validation message is displayed while the user logs in with invalid credentials, and should not be logged in.
+d. To test if the login page consists input field, password field, forgot password button and login button.
+e. To test if the password is sent plain or encrypted after the login button is clicked.
+f. To check if the user is previously logged in or not. If logged in the user must not be shown the login page again.
+g. As a security, verify that the password cannot be copied nor be pasted.
+h. Verify if SQL injection doesnot work in login page.
